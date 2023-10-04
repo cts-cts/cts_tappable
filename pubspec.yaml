@@ -1,6 +1,6 @@
 name: cts_tappable
 description: A new Flutter package project.
-version: 1.0.2
+version: 1.0.4
 homepage: https://github.com/fsmcts/cts_tappable
 
 environment:
@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   latlong2: ^0.9.0
-  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

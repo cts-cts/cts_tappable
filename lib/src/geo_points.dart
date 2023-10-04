@@ -1,4 +1,4 @@
-import 'package:cts_tappable/src/cts_tappable.dart';
+import 'package:cts_tappable/cts_tappable.dart';
 
 class GeoPoints {
   GeoPoints._();
