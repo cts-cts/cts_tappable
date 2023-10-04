@@ -1,7 +1,14 @@
 library cts_tappable;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:geodesy/geodesy.dart';
+export 'package:latlong2/latlong.dart';
+
+class CtsTappable {
+  CtsTappable._();
+
+  static final geodesy = Geodesy();
+
+  static bool checkPointInPolygon(LatLng point, List<LatLng> polygon) {
+    return geodesy.isGeoPointInPolygon(point, polygon);
+  }
 }
