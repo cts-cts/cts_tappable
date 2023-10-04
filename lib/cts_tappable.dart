@@ -6,10 +6,10 @@ export 'package:latlong2/latlong.dart';
 class CtsTappable {
   CtsTappable._();
 
-  static final geodesy = Geodesy();
+  static final _geodesy = Geodesy();
 
   static bool isPointInPolygon(
       {required LatLng point, required List<LatLng> polygon}) {
-    return geodesy.isGeoPointInPolygon(point, polygon);
+    return _geodesy.isGeoPointInPolygon(point, polygon);
   }
 }
