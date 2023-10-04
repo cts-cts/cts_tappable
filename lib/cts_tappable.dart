@@ -8,7 +8,8 @@ class CtsTappable {
 
   static final geodesy = Geodesy();
 
-  static bool checkPointInPolygon(LatLng point, List<LatLng> polygon) {
+  static bool checkPointInPolygon(
+      {required LatLng point, required List<LatLng> polygon}) {
     return geodesy.isGeoPointInPolygon(point, polygon);
   }
 }
